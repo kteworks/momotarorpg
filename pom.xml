@@ -17,14 +17,6 @@
 		</dependency>
 	</dependencies>
 
-	<dependencies>
-        	<dependency>
-        		<groupId>org.ow2.asm</groupId>
-        		<artifactId>asm</artifactId>
-            	<version>6.1</version>
-        </dependency>
-	</dependencies>
-
 	<build>
 		<sourceDirectory>src</sourceDirectory>
 		<plugins>
@@ -35,6 +27,13 @@
 					<source>1.8</source>
 					<target>1.8</target>
 				</configuration>
+				<dependencies>
+        <dependency>
+        	<groupId>org.ow2.asm</groupId>
+        	<artifactId>asm</artifactId>
+           	<version>6.1</version>
+        </dependency>
+	</dependencies>
 			</plugin>
 			<plugin>
 				<artifactId>maven-war-plugin</artifactId>
