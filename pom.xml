@@ -39,6 +39,7 @@
     <finalName>momotarorpg</finalName>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
+      
       <plugin>
       <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-dependency-plugin</artifactId>
@@ -51,7 +52,7 @@
                             <artifactItem>
                                 <groupId>com.github.jsimone</groupId>
                                 <artifactId>webapp-runner</artifactId>
-                                <version>9.0.11.0</version>
+                                <version>9.0.52.1</version>
                                 <destFileName>webapp-runner.jar</destFileName>
                             </artifactItem>
                         </artifactItems>
@@ -59,6 +60,8 @@
                 </execution>
             </executions>
       </plugin>
+      
+      
         <plugin>
           <artifactId>maven-clean-plugin</artifactId>
           <version>3.1.0</version>
