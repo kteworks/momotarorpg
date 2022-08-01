@@ -18,7 +18,6 @@
 	</dependencies>
 
 	<build>
-		<finalName>momotarorpg</finalName>
 		<sourceDirectory>src</sourceDirectory>
 		<plugins>
 			<plugin>
