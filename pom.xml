@@ -9,8 +9,7 @@
 		<dependency>
 		  <groupId>javax.servlet</groupId>
 		  <artifactId>javax.servlet-api</artifactId>
-		  <!--301ではPartに対応してないらしいので変更 3.0.1 → 4.0.0 -->
-		  <version>4.0.0</version>
+		  <version>3.1.0</version>
 		  <scope>provided</scope>
 		</dependency>
 	</dependencies>
@@ -21,19 +20,7 @@
   
 		<plugin>
 		  <artifactId>maven-compiler-plugin</artifactId>
-		  <version>3.7.0</version>
-		  <configuration>
-			<source>1.8</source>
-			<target>1.8</target>
-		  </configuration>
-		  <!--ASMの導入。（http://atmarksharp.v01.jp/posts/asm-java-bytecode-generator.html）-->
-		  <dependencies>
-			  <dependency>
-				<groupId>org.ow2.asm</groupId>
-				<artifactId>asm</artifactId>
-				<version>6.1</version>
-			  </dependency>
-		  </dependencies>
+		  <version>3.8.0</version>
 		</plugin>
   
 		<plugin>
