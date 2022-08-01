@@ -33,6 +33,22 @@
 		</sourceDirectory>
 		<plugins>
 			<plugin>
+				<artifactId>
+					maven-compiler-plugin
+				</artifactId>
+				<version>
+					3.7.0
+				</version>
+			</plugin>
+			<plugin>
+				<artifactId>
+					maven-war-plugin
+				</artifactId>
+				<version>
+					3.3.1
+				</version>
+			</plugin>
+			<plugin>
 				<groupId>
 					org.apache.maven.plugins
 				</groupId>
@@ -69,22 +85,6 @@
 						</configuration>
 					</execution>
 				</executions>
-			</plugin>
-			<plugin>
-				<artifactId>
-					maven-compiler-plugin
-				</artifactId>
-				<version>
-					3.7.0
-				</version>
-			</plugin>
-			<plugin>
-				<artifactId>
-					maven-war-plugin
-				</artifactId>
-				<version>
-					3.3.1
-				</version>
 			</plugin>
 		</plugins>
 	</build>
