@@ -37,8 +37,15 @@
 					maven-compiler-plugin
 				</artifactId>
 				<version>
-					3.7.0
+					3.8.0
 				</version>
+				<dependencies>
+					<dependency>
+					  <groupId>org.ow2.asm</groupId>
+					  <artifactId>asm</artifactId>
+					  <version>6.1</version>
+					</dependency>
+				</dependencies>
 			</plugin>
 			<plugin>
 				<artifactId>
