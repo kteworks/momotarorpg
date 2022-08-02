@@ -24,7 +24,7 @@
 		</p>
 	</div>
 <div class="select">
-<form action="/rpg/JobServlet" method="post">
+<form action="/JobServlet" method="post">
 <div>
 
 	<div class="selectmomo">

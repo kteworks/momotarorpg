@@ -24,7 +24,7 @@
 		</p>
 	</div>
 <div class="shop">
-<form action="/rpg/ShopServlet" method="post">
+<form action="/ShopServlet" method="post">
 <div>
 
 	<div class="shopmitarashi">

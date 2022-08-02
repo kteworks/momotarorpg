@@ -29,7 +29,7 @@
 		<p class="status">所持金：${player.money}&nbsp;java</p>
 		<p class="status">HP：${player.status[3]}</p>
 		<p class="status">MP：${player.status[4]}</p>
-		<% if(sp != 0) {%><form action="/rpg/StatusServlet" method="post" oninput="resultpt.value=Number(${account.getSkillPoint()}) - (Number(atk.value) + Number(def.value) + Number(spd.value));"><% } %>
+		<% if(sp != 0) {%><form action="/StatusServlet" method="post" oninput="resultpt.value=Number(${account.getSkillPoint()}) - (Number(atk.value) + Number(def.value) + Number(spd.value));"><% } %>
 		<p class="status">攻撃：${player.status[0]}<% if(sp != 0) {%><input type="number" name="atk" min="0" max="${account.getSkillPoint()}" value="0" style="width: 4.6em;float: right;"><% } %></p>
 		<p class="status">防御：${player.status[1]}<% if(sp != 0) {%><input type="number" name="def" min="0" max="${account.getSkillPoint()}" value="0" style="width: 4.6em;float: right;"><% } %></p>
 		<p class="status">早さ：${player.status[2]}<% if(sp != 0) {%><input type="number" name="spd" min="0" max="${account.getSkillPoint()}" value="0" style="width: 4.6em;float: right;"><% } %></p>

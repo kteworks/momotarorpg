@@ -12,7 +12,7 @@
 <main class="login">
 	<div class="login">
 	<h2 class="login">新規登録</h2>
-	<form action="/rpg/NewPlayerServlet" method="post">
+	<form action="/NewPlayerServlet" method="post">
 	<table class="login">
 		<tr class="login">
 			<td class="login">ユーザーID</td>

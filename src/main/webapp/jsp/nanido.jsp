@@ -24,7 +24,7 @@
 		</p>
 	</div>
 <div class="select">
-<form action="/rpg/QuestServlet" method="post">
+<form action="/QuestServlet" method="post">
 <div>
 
 	<div class="selectmomo">
