@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+<<<<<<< HEAD
                 
     
     
@@ -35,5 +36,32 @@
     </wb-module>
             
 
+=======
+            
+    
+    <wb-module deploy-name="momotarorpg1">
+                        
+        
+        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
+                        
+        
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+                        
+        
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+                        
+        
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/target/generated-test-sources/test-annotations"/>
+                        
+        
+        <property name="java-output-path" value="/momotarorpg1/target/classes"/>
+                
+        <property name="context-root" value="momotarorpg1"/>
+                    
+    
+    </wb-module>
+        
+>>>>>>> 8eccb18c9799f6ad5bc0f08a232ebb023a0a9231
 
 </project-modules>
