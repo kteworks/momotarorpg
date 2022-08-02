@@ -1,0 +1,1235 @@
+@charset "UTF-8";
+
+body{
+	margin: 0;
+	font-family: "Script", "MS ゴシック", "MSGothic", "sans-serif";
+	width: 100%;
+	height: 100vh;
+	overflow-x: hidden;
+
+	}
+
+main{
+	width: 100%;
+	height: 100vh;
+}
+
+/*TOP・ログイン・新規登録*/
+main.login{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #000000;
+}
+
+div.login{
+	width: 450px;
+	height: 280px;	
+	padding: 2%;
+	background: #ffffff; 
+	opacity: 0.9;
+	border-radius:10px;
+}
+
+h1.login{
+	width: 100%;
+	margin: 8% 0% 10% 0%;
+	text-align: center;
+}
+
+a.login{
+	display: block;
+	text-align: center;
+	width: 30%;
+	padding: 8px 24px;
+	text-decoration: none;
+	border: 1px;
+	border-radius:10px;
+	background: #000000;
+	color: #ffffff;
+	box-shadow: 0px 2px 4px #575;
+	transition: box-shadow .3s;
+	margin: 0 auto;
+}
+
+a.login:hover{
+	box-shadow: 0px 4px 8px #575;
+}
+
+h2.login{
+	width: 100%;
+	margin: 2% 0% 5% 0%;
+	text-align: center;
+}
+
+table.login{
+	margin: auto;
+}
+
+tr.login{
+	justify-content: center;
+}
+
+td.login{
+	float: left;
+	width:100%;
+	padding: 10px;
+}
+td.logininput{
+	width: 67%;
+	padding: 10px;
+}
+
+input.login{
+	cursor: pointer;
+	padding: 2%;
+	width: 96%;
+}
+
+p.error{
+	color: red;
+	width: 100%;
+	text-align: center;
+	margin: 0;
+}
+
+div.loginbutton{
+	display:flex;
+	margin:5%;
+}
+
+input.loginbutton{
+	cursor: pointer;
+	width: 148px;
+}
+
+input.loginbutton,a.loginbutton{
+	display: block;
+	font-size: 20px;
+	justify-content: center;
+	align-items: center;
+	padding: 0% 3% 0% 3%;
+	text-align: center;
+	padding: 8px 24px;
+	text-decoration: none;
+	border: 1px;
+	border-radius:10px;
+	background: #000000;
+	color: #ffffff;
+	box-shadow: 0px 2px 4px #575;
+	transition: box-shadow .3s;
+	margin: 0 auto;
+}
+
+input.loginbutton:hover,a.loginbutton:hover{
+	box-shadow: 0px 4px 8px #575;
+}
+
+/*header*/
+
+header{
+	background: #f5a500;
+	width: 100%;
+	height:100px;
+}
+
+div.header{
+	display: flex;
+	height:100%;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0%;
+}
+
+div.headerchild{
+	width: 50%;
+}
+
+h2.header{
+	margin:0;
+	padding-left: 20%;
+}
+
+ul.header{
+	list-style: none;
+	width: 50%;
+	margin: 0%;
+	padding: 0% 0% 0% 30%;
+}
+
+a.header{
+	display: block;
+	justify-content: center;
+	align-items: center;
+	padding: 0% 3% 0% 3%;
+	text-align: center;
+	width: 100px;
+	padding: 0px 4px;
+	text-decoration: none;
+	border: 1px;
+	border-radius:10px;
+	background: #000000;
+	color: #ffffff;
+	box-shadow: 0px 2px 4px #575;
+	transition: box-shadow .3s;
+	margin: 0 auto;
+	margin-top: 1%;
+}
+
+a.header:hover{
+  box-shadow: 0px 4px 8px #575;
+}
+
+/*スタート画面*/
+
+main.start{
+	width:100%;
+	height: calc(100% - 100px);
+	background-image:radial-gradient(ellipse at center, rgba(255,255,255,0) 40%,rgba(255,255,255,0.5) 60%,rgba(255,255,255,1) 100%),url(/rpg/images/niwa.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+div.start{
+	width: 30%;
+	margin:0 auto;
+	padding-top: 5%;
+}
+
+a.start{
+	display: block;
+	text-align: center;
+	font-weight:bold;
+	width: calc(100% - 48px);
+	padding: 16px 24px;
+	text-decoration: none;
+	border: 1px;
+	border-radius:10px;
+	background: #000000;
+	color: #ffffff;
+	box-shadow: 0px 2px 4px #575;
+	transition: box-shadow .3s;
+	margin-bottom: 10%;
+}
+
+a.start:hover{
+	box-shadow: 0px 4px 8px #575;
+}
+
+/*バトル画面*/
+
+main.battle{
+	width:100%;
+	height: calc(100% - 100px);
+	background-image:radial-gradient(ellipse at center, rgba(255,255,255,0) 40%,rgba(255,255,255,0.5) 60%,rgba(255,255,255,1) 100%);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+div.battle{
+	position:relative;
+}
+
+div.hp{
+	display:frex;
+	flex-direction:row;
+	width:400px;
+	margin-left: 7%;
+}
+
+div.battleimg{
+	position: absolute;
+	width:100%;
+	top: 0%;
+	left: 40%;
+	transform: translate(-10%, 50%);
+}
+
+progress.teki {
+	position: absolute;
+	width:130px;
+	background: none;
+	 top: 0%;
+    left: 10%;
+    transform: translate(0%, 120%);
+	-webkit-appearance: none;
+	border: 1px solid red;
+}
+
+progress.teki::-webkit-progress-value {
+	background-color: red;
+}
+
+progress.user {
+	position: absolute;
+	background: none;
+	width:130px;
+	top: 60%;
+	-webkit-appearance: none;
+	border: 1px solid blue;
+}
+
+progress.user::-webkit-progress-value {
+	background-color: blue;
+}
+
+img.anim-box {
+	border-radius: 5px;
+	max-width: 400px;
+	margin-top: 5%;  
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-duration: 1.5s;
+	animation-name: poyoyon2;
+	position: absolute;
+}
+ 
+@keyframes poyoyon2 {
+  0%  {
+    transform: scale(1.0, 1.0) translate(0, 0);
+  }
+  15% {
+    transform: scale(0.98, 0.9) translate(0, 5px);
+  }
+  30% {
+    transform: scale(1.02, 1.0) translate(0, 8px);
+  }
+  50% {transform: scale(0.98, 1.05) translate(0, -8px);
+  }
+  70% {
+    transform: scale(1.0, 0.9) translate(0, 5px);
+  }
+  100% {
+    transform: scale(1.0, 1.0) translate(0, 0);
+  }
+  0%, 100% {
+    opacity: 1;
+  }
+}
+
+div.container{
+	position: absolute;
+	color:#ffffff;
+	background: #000000;
+	border-radius: 10px;
+	border: 2px solid #ffffff;
+	width:130px;
+	top: 0%;
+	left: 80%;
+	transform: translate(-100%, 40%);
+	padding:10px 20px;
+}
+
+p.lv{
+	margin: 0 auto;
+	
+}
+
+div.battlelist{
+	position: absolute;
+	display:flex;
+	flex-flow: column;
+	height:0;
+    overflow:hidden;
+    width:150px;
+	top: 0%;
+	left: 80%;
+	transform: translate(-100%, 150%);
+	-moz-animation: cssAnimation 0s ease-in 4s forwards;
+    /* Firefox */
+    -webkit-animation: cssAnimation 0s ease-in 4s forwards;
+    /* Safari and Chrome */
+    -o-animation: cssAnimation 0s ease-in 4s forwards;
+    /* Opera */
+    animation: cssAnimation 0s ease-in 4s forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@keyframes cssAnimation {
+    to {
+        height:auto;
+        overflow:visible;
+    }
+}
+
+div.battlelist button,div.battlelist p,label.open{
+	cursor:pointer;
+	width:100%;
+	font-size:20px;
+	text-align:center;
+	margin:0;
+	color:#ffffff;
+	background: #000000;
+	border-radius: 10px;
+	border: 2px solid #ffffff;
+	margin-bottom:4px;
+	box-shadow: 0px 2px 4px #575;
+	transition: box-shadow .3s;
+}
+
+div.battlelist button:hover,div.battlelist p:hover,label.open:hover{
+	box-shadow: 0px 4px 8px #575;
+	background: #aaaaaa;
+}
+
+div.battlelist p{
+	width: 135px;
+	padding:1px 6px 1px 6px;
+}
+
+label.open{
+	padding:1px 43px 1px 43px;
+}
+
+div.battleitem:hover div.itemlist{
+	height: auto;
+    overflow: visible;
+}
+
+div.itemlist{
+	position: absolute;
+	height: 0;
+	width:170px;
+    overflow: hidden;
+    display:flex;
+	flex-flow: column;
+	top: 50%;
+	left: 0%;
+	transform: translate(89%, 3%);
+}
+
+p#su{
+	position: absolute;
+	background: #cc0000;
+	width:20px;
+	height:20px;
+	border-radius: 20px;
+	font-size: 15px;
+    left: 93%;
+    transform: translateY(-200%);
+    padding: 0;
+}
+
+input#pop-up {
+	display: none; /* label でコントロールするので input は非表示に */
+}
+div.overlay {
+	display: none; /* input にチェックが入るまでは非表示に */
+	width: 100vw;
+	height: 100vh;
+}
+input#pop-up:checked + div.overlay {
+	display: block;
+	z-index: 9999;
+	background-color: #00000070;
+	position: fixed;
+	width: 110vw;
+	height: 110vh;
+	top: 0%;
+	left: 0%;
+	transform: translate(0%, 0%);
+	margin-top: calc(0% - 31vw);
+    margin-left: calc(0% - 72vw);
+}
+
+div.window {
+	width: 60%;
+	max-width: 380px;
+	height: 200px;
+	color:#ffffff;
+	background-color: #cc0000;
+	border: 2px;
+    border-color: #ffffff;
+    border-radius: 6px;
+	display: flex;
+	flex-direction:column;
+	text-align:center;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+p.text {
+	font-size: 18px;
+	margin: 0;
+}
+label.close {
+	cursor:pointer;
+	position: absolute;
+	top: 4px;
+	right: 4px;
+	font-size: 20px;
+}
+
+button#battleesc{
+	width:100px;
+}
+
+div.battlecomment{
+	position: absolute;
+	color:#ffffff;
+	background: #000000;
+	border-radius: 10px;
+	border: 2px solid #ffffff;
+	width:60%;
+	height:130px;
+	top: 0%;
+	left: 50%;
+	transform: translate(-50%, 320%);
+	z-index:9998;
+	overflow-y: auto;
+}
+
+div.battlecomment p{
+	margin:2% 3% 2% 3%;
+	line-height: 27px;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@keyframes animtext{
+  from{opacity: 0}
+  to{opacity: 1;}
+}
+
+div.overlaypt,div.overlaynext{
+	height:0;
+    overflow:hidden;
+	-moz-animation: cssAnimation2 0s ease-in 4s forwards;
+    /* Firefox */
+    -webkit-animation: cssAnimation2 0s ease-in 4s forwards;
+    /* Safari and Chrome */
+    -o-animation: cssAnimation2 0s ease-in 4s forwards;
+    /* Opera */
+    animation: cssAnimation2 0s ease-in 4s forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@keyframes cssAnimation2 {
+    to {
+    	height: 100vh;
+        overflow:visible;
+    }
+}
+div.overlaypt{
+	display: block;
+	z-index: 9999;
+	background-color: #00000070;
+	position: fixed;
+	width: 100vw;
+	top: 0%;
+	left: 0%;
+	transform: translate(0%, 0%);
+}
+div.battlept{
+	position: absolute;
+	text-align: center;
+	color:#ffffff;
+	background: #cc0000;
+	border-radius: 10px;
+	border: 2px solid #ffffff;
+	width:60%;
+	height:390px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+div.battlept p{
+	font-weight:bold;
+	margin:2% 3% 2% 3%;
+}
+
+p.errorpt{
+	color:yellow;
+}
+
+input.battlept{
+	width: 40px;
+	font-size:15px;
+	text-align: right;
+	vertical-align: middle;
+	font-weight: bold;
+	margin-left:10px;
+	margin-right:10px;
+	border:1px;
+	border-style:solid;
+	border-radius: 5px;
+	padding: 2px;
+}
+
+button.battlesubmit{
+	cursor:pointer;
+	width:200px;
+	font-size:18px;
+	text-align:center;
+	margin:0;
+	color:#ffffff;
+	background: #000000;
+	border-radius: 10px;
+	border: 2px solid #ffffff;
+	margin-bottom:4px;
+	box-shadow: 0px 2px 4px #575;
+	transition: box-shadow .3s;
+}
+
+input.battlesubmit:hover{
+	box-shadow: 0px 4px 8px #575;
+	background: #aaaaaa;
+}
+
+div.overlaynext{
+	display: block;
+	z-index: 9999;
+	background-color: #ffffff70;
+	position: fixed;
+	width: 100vw;
+	top: 0%;
+	left: 0%;
+	transform: translate(0%, 0%);
+}
+div.battlenext{
+	position: absolute;
+	text-align: center;
+	color:#ffffff;
+	background: #193278;
+	border-radius: 10px;
+	border: 2px solid #ffffff;
+	width:60%;
+    max-width: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+div.battlenext p{
+	font-weight:bold;
+	margin:2% 3% 2% 3%;
+}
+
+input.battlenext{
+	cursor:pointer;
+	width:100px;
+	font-size:18px;
+	text-align:center;
+	margin:0;
+	color:#ffffff;
+	background: #000000;
+	border-radius: 10px;
+	border: 2px solid #ffffff;
+	margin-top:30px;
+	box-shadow: 0px 2px 4px #575;
+	transition: box-shadow .3s;
+}
+
+input.battlenext:hover{
+	box-shadow: 0px 4px 8px #575;
+	background: #aaaaaa;
+}
+
+/*ステータス*/
+
+main.status{
+	height: calc(100% - 100px);
+	background: linear-gradient(45deg, #B67B03 0%, #DAAF08 45%, #FEE9A0 70%, #DAAF08 85%, #B67B03 90% 100%);
+}
+
+div.status{
+	position:relative;
+}
+
+h2.status{
+	width: 100%;
+	margin:0;
+	padding: 2% 0% 5% 0%;
+	text-align: center;
+}
+
+div.statusimg{
+	position:absolute;
+	top: 0%;
+	left: 8%;
+	transform: translate(-10%, 0%);
+}
+
+div.statususer,div.statusitem{
+	width:210px;
+	height:420px;
+	color: #ffffff;
+	background: #000000;
+	border-radius: 5px;
+	border: 1px solid #000000;
+	padding:10px 15px 10px 15px;
+}
+
+div.statususer{
+	position:absolute;
+	top: 0%;
+	left: 50%;
+	transform: translate(-10%, 0%);
+}
+
+div.statusitem{
+	position:absolute;
+	top: 0%;
+	left: 76%;
+	transform: translate(-10%, 0%);
+}
+
+p.bold{
+	font-weight:bold;
+	text-align:center;
+	margin:0;
+}
+
+
+
+
+
+/*以下オクデ*/
+
+/*gameover*/
+main.gameover{
+	margin: 0;
+	background:black;
+	height:100vh;
+}
+
+p.gameover{
+	margin: 0;
+	color:white;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
+}
+
+div.gameovercomment{
+	position: absolute;
+	background: #cccccc;
+	border-radius: 20px;
+	border: 0px solid #000000;
+	width:59.3%;
+	height:220px;
+	bottom: 0%;
+	top: 92.6%;
+	left: 49.5%;
+	transform: translate(-50%, -183%);
+}
+
+div.gameovercomment p{
+	margin:1% 3% 1% 3%;
+
+}
+
+.line-1{
+    position: relative;
+    top: 10%;  
+    width: 19em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+}
+
+/* Animation */
+.anim-typewriter1{
+  animation: typewriter1 4s steps(44) 1s 1 normal both,
+ blinkTextCursor1 500ms steps(44) infinite normal;
+ animation-delay: 0s;
+}
+@keyframes typewriter1{
+  from{width: 0;}
+  to{width: 19em;}
+}
+@keyframes blinkTextCursor1{
+  from{border-right-color1: rgba(255,255,255,.75);}
+  to{border-right-color1: transparent;}
+}
+
+.line-2{
+    position: relative;
+    top: 10%;  
+    width: 16em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+}
+
+/* Animation */
+.anim-typewriter2{
+  animation: typewriter2 4.2s steps(44) 1s 1 normal both,
+ blinkTextCursor2 500ms steps(44) infinite normal;
+ animation-delay: 4.5s;
+}
+@keyframes typewriter2{
+  from{width: 0;}
+  to{width: 16em;}
+}
+@keyframes blinkTextCursor2{
+  from{border-right-color2: rgba(255,255,255,.75);}
+  to{border-right-color2: transparent;}
+}
+
+.line-3{
+    position: relative;
+    top: 10%;  
+    width: 15em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+}
+
+/* Animation */
+.anim-typewriter3{
+  animation: typewriter3 4.2s steps(44) 1s 1 normal both,
+ blinkTextCursor3 500ms steps(44) infinite normal;
+ animation-delay: 9.2s;
+}
+@keyframes typewriter3{
+  from{width: 0;}
+  to{width: 15em;}
+}
+@keyframes blinkTextCursor3{
+  from{border-right-color3: rgba(255,255,255,.75);}
+  to{border-right-color3: transparent;}
+}
+
+.line-4{
+    position: relative;
+    top: 10%;  
+    width: 25em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+}
+
+/* Animation */
+.anim-typewriter4{
+  animation: typewriter4 4.5s steps(44) 1s 1 normal both,
+ blinkTextCursor4 500ms steps(44) infinite normal;
+ animation-delay: 13.9s;
+}
+@keyframes typewriter4{
+  from{width: 0;}
+  to{width: 25em;}
+}
+@keyframes blinkTextCursor4{
+  from{border-right-color4: rgba(255,255,255,.75);}
+  to{border-right-color4: transparent;}
+}
+
+.line-5{
+    position: relative;
+    top: 10%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+}
+
+/* Animation */
+.anim-typewriter5{
+  animation: typewriter5 4.5s steps(44) 1s 1 normal both,
+ blinkTextCursor5 500ms steps(44) infinite normal;
+ animation-delay: 18.9s;
+}
+@keyframes typewriter5{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor5{
+  from{border-right-color5: rgba(255,255,255,.75);}
+  to{border-right-color5: transparent;}
+}
+
+.line-6{
+    position: relative;
+    top: 10%;  
+    width: 38em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+}
+
+/* Animation */
+.anim-typewriter6{
+  animation: typewriter6 5.2s steps(44) 1s 1 normal both,
+ blinkTextCursor6 500ms steps(44) infinite normal;
+ animation-delay: 23.9s;
+}
+@keyframes typewriter6{
+  from{width: 0;}
+  to{width: 38em;}
+}
+@keyframes blinkTextCursor6{
+  from{border-right-color2: rgba(255,255,255,.75);}
+  to{border-right-color6: transparent;}
+}
+
+
+
+
+
+
+
+/*select*/
+main.select{
+	width:100%;
+	background-image:radial-gradient(ellipse at center, rgba(255,255,255,0) 40%,rgba(255,255,255,0.5) 60%,rgba(255,255,255,1) 100%),url(/rpg/images/niwa.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+h2.select{
+	width: 100%;
+	margin:0;
+	padding: 2% 0% 5% 0%;
+	text-align: center;
+}
+
+div.select{
+	position:relative;
+}
+
+div.selectimg{
+	position: absolute;
+	width:50%;
+	height:50%;
+	top: 25%;
+	left: 10%;
+	transform: translate(-10%, 0%);
+}
+
+div.selecthanashi{
+	position:absolute;
+	top: 17%;
+	left: 14%;
+	transform: translate(-10%, 0%);
+}
+
+div.selectmomo{
+	position:absolute;
+	top: 0%;
+	left: 40%;
+	transform: translate(-10%, 0%);
+}
+
+div.selectkin{
+	position:absolute;
+	top: 0%;
+	left: 60%;
+	transform: translate(-10%, 0%);
+}
+
+div.selectura{
+	position:absolute;
+	top: 0%;
+	left: 80%;
+	transform: translate(-10%, 0%);
+}
+
+img.select{
+	width: 200px;
+    height: 200px;
+    vertical-align: bottom;
+}
+
+div.selectmomo,div.selectkin,div.selectura{
+	width:210px;
+	height:400px;
+	color: #ffffff;
+	background: #878686;
+	border-radius: 5px;
+	border: 1px solid #000000;
+	padding:10px 15px 10px 15px;
+}
+
+div.selectlist{
+	position: absolute;
+	display:flex;
+	flex-flow: column;
+	width:130px;
+	top: 75%;
+	left: 77%;
+	transform: translate(-100%, 120%);
+}
+
+div.selectlist button,div.selectlist p{
+	width:100%;
+	font-size:20px;
+	text-align:center;
+	margin:0;
+	color:#ffffff;
+	background: #878686;
+	border-radius: 10px;
+	border: 2px solid #ffffff;
+	margin-bottom:4px;
+	box-shadow: 0px 2px 4px #575;
+	transition: box-shadow .3s;
+}
+
+div.selectlist button:hover,div.selectlist p:hover{
+  box-shadow: 0px 4px 8px #575;
+  background: #aaaaaa;
+}
+
+div.selectlist p{
+	width: 114px;
+	padding:1px 6px 1px 6px;
+}
+
+
+
+
+
+
+
+
+
+
+/*shop*/
+div.shop{
+	position:relative;
+}
+
+
+/*select*/
+main.shop{
+	width:100%;
+	background-image:radial-gradient(ellipse at center, rgba(255,255,255,0) 40%,rgba(255,255,255,0.5) 60%,rgba(255,255,255,1) 100%),url(/rpg/images/niwa.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+h2.shop{
+	width: 100%;
+	margin:0;
+	padding: 2% 0% 5% 0%;
+	text-align: center;
+}
+
+div.shop{
+	position:relative;
+}
+
+div.shopimg{
+	position: absolute;
+	width:50%;
+	height:50%;
+	top: 25%;
+	left: 10%;
+	transform: translate(-10%, 0%);
+}
+
+div.shophanashi{
+	position:absolute;
+	top: 17%;
+	left: 14%;
+	transform: translate(-10%, 0%);
+}
+
+div.shopmitarashi{
+	position:absolute;
+	top: -20%;
+	left: 40%;
+	transform: translate(-10%, 0%);
+}
+
+div.shopkibi{
+	position:absolute;
+	top: -20%;
+	left: 60%;
+	transform: translate(-10%, 0%);
+}
+
+div.shopan{
+	position:absolute;
+	top: -20%;
+	left: 80%;
+	transform: translate(-10%, 0%);
+}
+
+div.shopniku{
+	position:absolute;
+	top: 350%;
+	left: 40%;
+	transform: translate(-10%, 110%);
+}
+
+div.shopkusa{
+	position:absolute;
+	top: 350%;
+	left: 60%;
+	transform: translate(-10%, 110%);
+}
+
+div.shopdoro{
+	position:absolute;
+	top: 350%;
+	left: 80%;
+	transform: translate(-10%, 110%);
+}
+
+img.shop{
+	width: 100px;
+    height: 100px;
+    vertical-align: bottom;
+}
+
+div.shopmitarashi,div.shopkibi,div.shopan,div.shopniku,div.shopkusa,div.shopdoro{
+	width:210px;
+	height:200px;
+	color: #ffffff;
+	background: #878686;
+	border-radius: 5px;
+	border: 1px solid #000000;
+	padding:10px 15px 10px 15px;
+}
+
+div.shoplist{
+	position: absolute;
+	display:flex;
+	flex-flow: column;
+	width:130px;
+	top: 60%;
+	left: 77%;
+	transform: translate(-100%, 120%);
+}
+
+div.shoplist button,div.shoplist p{
+	width:100%;
+	font-size:20px;
+	text-align:center;
+	margin:0;
+	color:#ffffff;
+	background: #878686;
+	border-radius: 10px;
+	border: 2px solid #ffffff;
+	margin-bottom:4px;
+	box-shadow: 0px 2px 4px #575;
+	transition: box-shadow .3s;
+}
+
+div.shoplist button:hover,div.shoplist p:hover{
+  box-shadow: 0px 4px 8px #575;
+  background: #aaaaaa;
+}
+
+div.shoplist p{
+	width: 114px;
+	padding:1px 6px 1px 6px;
+}
+
+div.error{
+	position:relative;
+	top: 70%;
+    left: 50%;
+    transform: translate(10%, 10%);
+    width: 30%;
+}
+
+p.success{
+	position: absolute;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+/*move*/
+img.animation{
+  z-index: 4;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-direction: alternate-reverse;
+  animation-duration: 3.0s;
+  width: 0px;
+  margin: 0;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  margin-right: -40%;
+  transform: translate(-50%, -50%) 
+}
+
+img.keyframe0{
+  animation-name: anim_po;
+}
+
+@keyframes anim_po {
+  0% {
+    top: 440px;
+    width: 0px;
+  }
+  100% {
+    top: 770px;
+    width: 200px;
+  }
+}
+
+img.move{
+	z-index: 3;
+	width: 500px;
+	height: 500px;
+	position: absolute;
+    top: 25%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
+}
+
+img.move2{
+	z-index: 2;
+	width: 1280px;
+	height: 600px;
+	vertical-align: bottom;
+}
+
+img.move3{
+	z-index: 1;
+	width: 1280px;
+	height: 280px;
+	vertical-align: bottom;
+}
+
+img.move2-1{
+	z-index: 2;
+	width: 1280px;
+	height: 880px;
+	vertical-align: bottom;
+}
