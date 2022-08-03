@@ -26,8 +26,11 @@ public class NewPlayerServlet extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
 	{
+		System.out.println("aaa");
 		request.setCharacterEncoding("UTF-8");
+		System.out.println("bbb");
 		String name = request.getParameter("name");
+		System.out.println("cccc");
 		String pass = request.getParameter("pass");
 		System.out.println("aaa");
 		System.out.println(name);
