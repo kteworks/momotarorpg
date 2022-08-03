@@ -48,17 +48,6 @@
 				provided
 			</scope>
 		</dependency>
-		<dependency>
-			<groupId>
-				org.postgresql
-			</groupId>
-			<artifactId>
-				postgresql
-			</artifactId>
-			<version>
-				42.2.1
-			</version>
-		</dependency>
 		<!-- https://mvnrepository.com/artifact/javax.servlet.jsp.jstl/jstl-api -->
 		<dependency>
 			<groupId>

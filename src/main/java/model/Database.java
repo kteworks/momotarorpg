@@ -1,8 +1,5 @@
 package model;
 
-import java.net.URI;
-import java.net.URISyntaxException;
-
 public class Database {
 	private static final String HOST = "ec2-34-193-44-192.compute-1.amazonaws.com";
 	private static final String DB_NAME = "de81jcg0ffo4th";
