@@ -4,6 +4,7 @@
 
 ## 職業訓練のグループ課題で制作しました  
 グループメンバーの意見を尊重しつつ設計、Model、データベースを一人で担当しました。  
+メンバーのポートフォリオとして使用できると思い、個人でオンラインに移行を行いました。  
 その他のJSP、CSSやサーブレットが行き詰った場合などにサポートを行ったり、改善案のサンプルを作成し提出から実装したりもすることができました。
 周回を前提とするようなデザインになっているのですがストーリー性を重視されたメンバーの意見により、  
 ステージと敵の生成は固定です。データベースの仕様では敵の生成はランダムにするなどが可能になっております。  
@@ -25,4 +26,11 @@ H2DB→PostgreSQL
 ・Mavenについての理解。主にpom.xml(ライブラリの追加等)、web.xmlへの記述次第で動いたり動かないことがあった。  
 ・移行先のSQLサーバーへのアクセス。SSLの使用が必須だということに気づかず苦戦。  
 ・SQLのデータの移行。Javaで移行用のアプリケーションを制作し使用。  
-[H2DB-to-SQL (https://github.com/kteworks/H2DB-to-SQL)](https://github.com/kteworks/H2DB-to-SQL)
+[H2DB-to-SQL (https://github.com/kteworks/H2DB-to-SQL)](https://github.com/kteworks/H2DB-to-SQL)  
+```
+## 更新履歴  
+v1.0  
+・Apache Tomcat 9からHerokuに移行
+・H2 DatabaseからPostgreSQLに移行
+・公開
+```
