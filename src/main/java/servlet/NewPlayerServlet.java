@@ -33,7 +33,7 @@ public class NewPlayerServlet extends HttpServlet {
 		Account login = new Account (name, pass);
 		RegisterDAO dao = new RegisterDAO();
 		Account account = dao.Register(login);
-		
+		System.out.println("aaaaaaaaa");
 		if(account != null)
 		{
 			HttpSession session = request.getSession();
