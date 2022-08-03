@@ -33,7 +33,7 @@
         <p class="lv">MP：${quest.getpRemainMP()}</p>
 </div>
 <div class="battlelist">
-<form action="/rpg/BattleServlet" method="post">
+<form action="/BattleServlet" method="post">
 <button class="battle" type="submit" name="action" value="攻撃">たたかう</button>
 <button class="battle" type="submit" name="action" value="魔法攻撃">まほう</button>
 <div class="battleitem">
@@ -105,7 +105,7 @@
 		<% } %>
 	
 	<div class="battlept">
-	<form action="/rpg/StatusServlet" method="post" oninput="resultpt.value=Number(${quest.getAccount().getSkillPoint()}) - (Number(atk.value) + Number(def.value) + Number(spd.value));">
+	<form action="/StatusServlet" method="post" oninput="resultpt.value=Number(${quest.getAccount().getSkillPoint()}) - (Number(atk.value) + Number(def.value) + Number(spd.value));">
  	<div class="battleptcomment">
 	<p>おめでとうございます！ボスに勝利しました！！<br>
 	レベルが上がりました！！ステータスポイントを割り振ってください。<br>
@@ -115,7 +115,7 @@
 	<p>防御<input class="battlept" type="number" name="def" value="0" min="0" max="${quest.getAccount().getSkillPoint()}">pt<br></p>
 	<p>速さ<input class="battlept" type="number" name="spd" value="0" min="0" max="${quest.getAccount().getSkillPoint()}">pt<br></p>
 	<p class="errorpt">${errorMsg}</p>
-	<button class="battlesubmit" type="submit" name="jsp" value="/rpg/QuestServlet">ポイントを割り振る</button>
+	<button class="battlesubmit" type="submit" name="jsp" value="/QuestServlet">ポイントを割り振る</button>
 	</div>
 	</form>
 	</div>
@@ -124,7 +124,7 @@
 	<div class="overlaynext">
 	<div class="battlenext">
 		<div class="battlenextcomment">
-		<form action="/rpg/QuestServlet" method="post">
+		<form action="/QuestServlet" method="post">
 			<p>おめでとうございます！<br>
 			ボスに勝利しました！！<br>
 			村へ戻ります。<br>
@@ -146,7 +146,7 @@
 	<div style="display: block;z-index: 9999;background-color: #00000070;position: fixed;width: 100vw;top: 0%;left: 0%;transform: translate(0%, 0%);height: 100vh;overflow:visible">
 	<% } %>
 	<div class="battlept">
-	<form action="/rpg/StatusServlet" method="post" oninput="resultpt.value=Number(${quest.getAccount().getSkillPoint()}) - (Number(atk.value) + Number(def.value) + Number(spd.value));">
+	<form action="/StatusServlet" method="post" oninput="resultpt.value=Number(${quest.getAccount().getSkillPoint()}) - (Number(atk.value) + Number(def.value) + Number(spd.value));">
 	<div class="battleptcomment">
 	<p>勝利おめでとうございます！<br>
 		レベルが上がりました！！<br>
@@ -166,7 +166,7 @@
 	<div class="overlaynext">
 	<div class="battlenext">
 		<div class="battlenextcomment">
-		<form action="/rpg/QuestServlet" method="post">
+		<form action="/QuestServlet" method="post">
 			<p>勝利おめでとうございます！<br>
 			次のバトルへ移動します。<br>
 			<input class="battlenext" type="submit" value="OK">
