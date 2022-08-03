@@ -1,6 +1,6 @@
 ﻿## ももたろうRPG  
 こちらからプレイできます。  
-[ももたろうRPG](https://momotarorpg.herokuapp.com)
+[ももたろうRPG (https://momotarorpg.herokuapp.com)](https://momotarorpg.herokuapp.com)
 
 ## 職業訓練のグループ課題で制作しました  
 グループメンバーの意見を尊重しつつ設計、Model、データベースを一人で担当しました。  
