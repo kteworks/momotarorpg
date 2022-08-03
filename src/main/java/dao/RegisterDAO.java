@@ -25,6 +25,8 @@ public class RegisterDAO {
 			String sql = "SELECT username FROM userdata WHERE USERNAME = ?";
 			PreparedStatement pStmt = conn.prepareStatement(sql);
 			pStmt.setString(1, account.getName());
+			
+			System.out.println(account.getName());
 
 			ResultSet rs = pStmt.executeQuery();
 			AccountDAO dao = new AccountDAO();
