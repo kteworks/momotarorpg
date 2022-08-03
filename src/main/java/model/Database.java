@@ -5,7 +5,6 @@ import java.net.URISyntaxException;
 
 public class Database {
 	private static URI dbUri;
-
 	private static String DB_USER = getDbUri().getUserInfo().split(":")[0];
 	private static String DB_PASS = getDbUri().getUserInfo().split(":")[1];
 	private static String JDBC_URL = "jdbc:postgresql://" + getDbUri().getHost() + ':' + getDbUri().getPort() + getDbUri().getPath()  + "?sslmode=require";
