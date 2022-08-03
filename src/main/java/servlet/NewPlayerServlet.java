@@ -31,7 +31,7 @@ public class NewPlayerServlet extends HttpServlet {
 		String pass = request.getParameter("pass");
 		
 		Account login = new Account (name, pass);
-		System.out.println(login.getAccount());
+		System.out.println(login.getName());
 		RegisterDAO dao = new RegisterDAO();
 		Account account = dao.Register(login);
 		
