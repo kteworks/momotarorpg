@@ -185,7 +185,7 @@ a.header:hover{
 main.start{
 	width:100%;
 	height: calc(100% - 100px);
-	background-image:radial-gradient(ellipse at center, rgba(255,255,255,0) 40%,rgba(255,255,255,0.5) 60%,rgba(255,255,255,1) 100%),url(/rpg/images/niwa.png);
+	background-image:radial-gradient(ellipse at center, rgba(255,255,255,0) 40%,rgba(255,255,255,0.5) 60%,rgba(255,255,255,1) 100%),url(/images/niwa.png);
 	background-repeat:no-repeat;
 	background-size:cover;
 }
@@ -903,7 +903,7 @@ div.gameovercomment p{
 /*select*/
 main.select{
 	width:100%;
-	background-image:radial-gradient(ellipse at center, rgba(255,255,255,0) 40%,rgba(255,255,255,0.5) 60%,rgba(255,255,255,1) 100%),url(/rpg/images/niwa.png);
+	background-image:radial-gradient(ellipse at center, rgba(255,255,255,0) 40%,rgba(255,255,255,0.5) 60%,rgba(255,255,255,1) 100%),url(/images/niwa.png);
 	background-repeat:no-repeat;
 	background-size:cover;
 }
@@ -1024,7 +1024,7 @@ div.shop{
 /*select*/
 main.shop{
 	width:100%;
-	background-image:radial-gradient(ellipse at center, rgba(255,255,255,0) 40%,rgba(255,255,255,0.5) 60%,rgba(255,255,255,1) 100%),url(/rpg/images/niwa.png);
+	background-image:radial-gradient(ellipse at center, rgba(255,255,255,0) 40%,rgba(255,255,255,0.5) 60%,rgba(255,255,255,1) 100%),url(/images/niwa.png);
 	background-repeat:no-repeat;
 	background-size:cover;
 }
