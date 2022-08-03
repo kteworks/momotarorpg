@@ -6,7 +6,7 @@ public class Database {
 	private static final String PORT = "5432";
 	private static final String DB_USER = "qmlxmlqaqlyauk";
 	private static final String DB_PASS = "86de3290ea25ece6f7128b7b1b3ff277d284dbcb0403c20c51677b47063e1cc4";
-	private static final String JDBC_URL = "jdbc:postgresql://" + HOST + ":" + PORT + "/" + DB_NAME;
+	private static final String JDBC_URL = "jdbc:postgresql://" + HOST + ":" + PORT + "/" + DB_NAME + "?sslmode=require";
 	
 	
 //	private static URI dbUri;
