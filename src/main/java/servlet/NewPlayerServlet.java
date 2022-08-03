@@ -29,9 +29,8 @@ public class NewPlayerServlet extends HttpServlet {
 		request.setCharacterEncoding("UTF-8");
 		String name = request.getParameter("name");
 		String pass = request.getParameter("pass");
-		
-		Account login = new Account (name, pass);
 		System.out.println(name);
+		Account login = new Account (name, pass);
 		RegisterDAO dao = new RegisterDAO();
 		Account account = dao.Register(login);
 		
