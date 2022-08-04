@@ -12,6 +12,7 @@
 ## ◇環境  
 グループ課題時の制作環境  
 Eclipse IDE  
+JavaSE 11  
 Apache Tomcat 9  
 JavaSE11 jsp+Servlet  
 H2 Database Engine  
